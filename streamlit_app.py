@@ -38,7 +38,7 @@ left_col, right_col = st.columns([1.1, 1], gap="small")
 
 # ========== 左侧：双层环形图（1:1还原，紧凑好看） ==========
 with left_col:
-    st.markdown("##### FAIR成熟度图谱")
+    st.markdown("##### FAIR成熟度评价")
     st.markdown("""
 <div style="width: 340px; margin:0 auto; position:relative; height:340px;">
   <div style="position:absolute; width:340px; height:340px; 
@@ -76,7 +76,7 @@ display:flex; align-items:center; justify-content:center; font-size:22px; font-w
 
 # ========== 右侧：FAIR 说明（极度紧凑） ==========
 with right_col:
-    st.markdown("##### FAIR指标说明")
+    st.markdown("##### FAIR成熟度评价指标说明")
 
     st.markdown("**F**")
     st.caption("F1: 知识图谱元数据提供URI标识符，且通过有效性检验(4—已完全实施)")
