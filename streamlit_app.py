@@ -2,7 +2,7 @@ import streamlit as st
 
 # 页面配置（紧凑模式）
 st.set_page_config(
-    page_title="FAIR成熟度",
+    page_title="FAIR成熟度评价结果",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -24,9 +24,9 @@ p, li { font-size: 0.95rem !important; margin:0.1rem 0 !important; }
 """, unsafe_allow_html=True)
 
 # ====================== 顶部标题 ======================
-st.title("FAIR成熟度")
+st.title("FAIR成熟度评价结果")
 
-st.markdown("##### 元数据统计信息")
+st.markdown("孤独症谱系障碍知识库AsdKB 元数据统计信息")
 st.markdown("""
 - 知识图谱元数据包含标题、标识符在内的17个元数据项
 - 数据资源元数据包含标题、下载链接在内的10个元数据项
@@ -79,22 +79,22 @@ with right_col:
     st.markdown("##### FAIR指标说明")
 
     st.markdown("**F**")
-    st.caption("F1: 知识图谱元数据提供URI标识符，且通过有效性检验")
-    st.caption("F2: 共有27个元数据项")
-    st.caption("F3: 数据资源元数据未提供数据标识符")
+    st.caption("F1: 知识图谱元数据提供URI标识符，且通过有效性检验(4—已完全实施)")
+    st.caption("F2: 共有27个元数据项(4—已完全实施)")
+    st.caption("F3: 数据资源元数据未提供数据标识符(1-未考虑)")
 
     st.markdown("**A**")
-    st.caption("A1: 元数据包含标题、描述、主题等元数据项，且标识符可关联至元数据记录")
-    st.caption("A2: 知识图谱元数据标识符通过有效验证")
+    st.caption("A1: 元数据包含标题、描述、主题等元数据项，且标识符可关联至元数据记录(4—已完全实施)")
+    st.caption("A2: 知识图谱元数据标识符通过有效验证(4—已完全实施)")
 
     st.markdown("**I**")
-    st.caption("I1: 元数据可以RDF形式实现描述")
-    st.caption("I2: 元数据项均可映射至遵循FAIR原则的词汇表")
-    st.caption("I3: 元数据未提供对其他数据的引用信息")
+    st.caption("I1: 元数据可以RDF形式实现描述(4—已完全实施)")
+    st.caption("I2: 元数据项均可映射至遵循FAIR原则的词汇表(4—已完全实施)")
+    st.caption("I3: 元数据未提供对其他数据的引用信息(1-未考虑)")
 
     st.markdown("**R**")
-    st.caption("R1.1: 采用Creative Commons许可体系")
-    st.caption("R1.2: 元数据包含作者、时间等来源信息")
+    st.caption("R1.1: 采用Creative Commons许可体系(4—已完全实施)")
+    st.caption("R1.2: 元数据包含作者、时间等来源信息(4—已完全实施)")
 
 # ====================== 底部悬浮按钮 ======================
 st.markdown("""
